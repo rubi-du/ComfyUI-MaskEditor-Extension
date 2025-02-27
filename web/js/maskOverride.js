@@ -21,7 +21,7 @@ app.registerExtension({
                     this.paths = [];
                     this.messageBroker.createPushTopic('lassoChange')
                     const oldCreateBrushSettings = this.uiManager.createBrushSettings;
-                    this.uiManager.createBrushSettings = async function(...args: any[]) {
+                    this.uiManager.createBrushSettings = async function(...args) {
                         const res = await oldCreateBrushSettings.apply(this, args);
                         const toggle = this.createToggle('Lasso', (event, value) => {
                             this.messageBroker.publish('lassoChange', value)

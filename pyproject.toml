@@ -1,0 +1,16 @@
+[project]
+name = "comfyui-maskEditor-extension"
+description = "This repository packages the latest BiRefNet model as a ComfyUI node for use, supporting chunked loading on both CPU and GPU, as well as model caching features."
+version = "1.0.7"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/rubi-du/ComfyUI-MaskEditor-Extension"
+#  Used by Comfy Registry https://comfyregistry.org
+
+dependencies = []
+
+[tool.comfy]
+PublisherId = "duhaifeng"
+DisplayName = "ComfyUI-MaskEditor-Extension"
+Icon = ""
