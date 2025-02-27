@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-maskEditor-extension"
 description = "This repository packages the latest BiRefNet model as a ComfyUI node for use, supporting chunked loading on both CPU and GPU, as well as model caching features."
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 
 [project.urls]
