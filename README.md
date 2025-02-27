@@ -22,5 +22,8 @@ Directly download the node source code package, unzip it into the `custom_nodes`
 Install via ComfyUI-Manager by searching for "ComfyUI-MaskEditor-Extension".  
 
 ## Usage
-<video src="./assets/mask-editor.mov" autoplay="false" controls="controls" width="800" height="600">
+<video src="https://github.com/user-attachments/assets/0b40725f-6795-436a-8dc7-d2846dd9ea03" autoplay="false" controls="controls" width="800" height="600">
 </video>
+
+
+
