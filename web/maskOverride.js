@@ -1,5 +1,7 @@
 import { app } from "../../scripts/app.js"
 
+let prevOpenLasso = false;
+
 app.registerExtension({
     name: 'Comfy.MaskEditorOverride',
     init(app) {
@@ -26,12 +28,15 @@ app.registerExtension({
                         const toggle = this.createToggle('Lasso', (event, value) => {
                             this.messageBroker.publish('lassoChange', value)
                         });
+                        toggle.querySelector('input[type="checkbox"]').checked = prevOpenLasso;
+                        this.messageBroker.publish('lassoChange', prevOpenLasso);
                         res.appendChild(toggle);
                         return res;
                     }
 
                     this.messageBroker.subscribe('lassoChange', (open) => {
                         self.openLasso = open;
+                        prevOpenLasso = open;
                     });
 
                     const oldHandlePointerDown = this.toolManager.handlePointerDown;
